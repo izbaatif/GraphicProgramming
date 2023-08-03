@@ -1,0 +1,17 @@
+/////////////////////////////////////
+// COURSERA GRAPHICS PROGRAMMING
+/////////////////////////////////////
+var img;
+///////////////////////////////////////////////////////
+function preload() { // preload() runs once
+    img = loadImage('assets/rockets.png');
+}
+//////////////////////////////////////////////////////
+function setup() { // setup() waits until preload() is done
+    createCanvas(600, 500);
+}
+/////////////////////////////////////////////////////
+function draw() {
+    background(255)
+    image(img, mouseX, mouseY, img.width/3, img.height/3);
+}
